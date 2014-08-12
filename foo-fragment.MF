@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.example.foo.fragment
+Fragment-Host: com.example.foo
+Export-Package: com.example.foo.fragment,com.example.foo.cfg;uses:="com.example.foo.fragment"

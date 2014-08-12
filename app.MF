@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.example.app
+Import-Package: com.example.foo.fragment,com.example.bar

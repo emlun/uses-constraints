@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.example.bar
+Export-Package: com.example.bar;uses:="com.example.foo"
+Import-Package: com.example.foo

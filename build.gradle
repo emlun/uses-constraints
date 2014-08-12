@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+task manifestJars
+
+['app', 'foo', 'bar', 'foo-fragment'].each { name ->
+    manifestJars.dependsOn task("${name}Jar", type: Jar) {
+        archiveName = "${name}.jar"
+        manifest {
+            from "${name}.MF"
+        }
+    }
+}
