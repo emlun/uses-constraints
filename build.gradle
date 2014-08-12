@@ -10,3 +10,8 @@ task manifestJars
         }
     }
 }
+
+task('zipJars', type: Zip) {
+    archiveName = 'uses-constraints.zip'
+    from manifestJars.outputs
+}
